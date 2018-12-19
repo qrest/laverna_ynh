@@ -34,7 +34,7 @@ sudo yunohost app checkurl "${domain}${path}" -a "$app" \
 # Copy source files
 src_path=/var/www/$app
 sudo mkdir -p $src_path
-sudo wget -P "$src_path" https://github.com/qrest/static-laverna/archive/master.zip -O "$src_path"/laverna.zip
+sudo wget -P "$src_path" https://github.com/qrest/static-laverna/archive/22dab3d70f6f3f251125c19677f6380bca631c02.zip -O "$src_path"/laverna.zip
 sudo unzip "$src_path"/laverna.zip -d "$src_path"
 sudo cp -R "$src_path"/static-laverna-master/* "$src_path"
 sudo rm "$src_path"/laverna.zip
