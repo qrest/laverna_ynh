@@ -36,9 +36,9 @@ src_path=/var/www/$app
 sudo mkdir -p $src_path
 sudo wget -P "$src_path" https://github.com/qrest/static-laverna/archive/22dab3d70f6f3f251125c19677f6380bca631c02.zip -O "$src_path"/laverna.zip
 sudo unzip "$src_path"/laverna.zip -d "$src_path"
-sudo cp -R "$src_path"/static-laverna-master/* "$src_path"
+sudo cp -R "$src_path"/static-laverna-22dab3d70f6f3f251125c19677f6380bca631c02/* "$src_path"
 sudo rm "$src_path"/laverna.zip
-sudo rm -rf "$src_path"/static-laverna-master
+sudo rm -rf "$src_path"/static-laverna-22dab3d70f6f3f251125c19677f6380bca631c02
 
 # Set permissions to app files
 sudo chown -R root: $src_path
